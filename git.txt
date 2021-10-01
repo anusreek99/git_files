@@ -1,0 +1,68 @@
+1)
+
+git config --global user.name "Anusree K"
+git config --global user.email "anusree.kuthirummal@mitsogo.com"
+ cat ~/.gitconfig
+
+
+->  name = Anusree K
+	email = anusree.kuthirummal@mitsogo.com
+
+2)  git config --global --list
+    ->   user.name=Anusree K
+         user.email=anusree.kuthirummal@mitsogo.com
+
+3)
+   ls- To list file names
+   pwd-shows where we are now at the operating system.
+   cd filename- To change the directory
+   git init filename- To make a new folder in the respective directory.
+   git ls -a - To see the unseen files.
+   git status- To get the status of the folder created
+
+    Example
+        Untracked files:
+        (use "git add <file>..." to include in what will be committed)
+	   .DS_Store
+	    README.md.rtf
+  
+
+   git add . - To add the file created in the repository
+   git commit -m" " -
+use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  use "git restore --staged <file>..." to unstage
+  "git add <file>..." to update what will be committed.
+  "git restore <file>..." to discard changes in working directory
+  "git restore --staged <file>..." to unstage
+  "git add <file>..." to update what will be committed
+  git restore <file>..." to discard changes in working directory
+  git rm filename - To remove file
+
+  4)SSH authentication commands
+
+  cd ~
+cd .ssh
+mkdir .ssh
+cd .ssh
+pwd
+ssh-keygen -t rsa -C "jason@jasongtaylor.com"
+mate id_rsa.pub
+ssh -T git@github.com
+
+
+Generating an SSH Key
+
+ssh-keygen -t rsa -C "your.name@your-company.com"
+Use your actual email address in the example above.
+
+Verify SSH authentication
+
+ssh -T git@github.com
+Above command uses ssh to connect to GitHub over the SSH protocol.
+
+
+
+
+
+
